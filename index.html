@@ -13,3 +13,36 @@
         <button onclick='c()'>click</button>
         </body>
         </html>
+
+
+        <html>
+            <head>
+                <title>laggage weight checking</title>
+                <script>
+                  function cw()
+                  {
+                    const w=document.getElementById("wi").value;
+                    const weight = parseFloat(w);
+                    if(isNaN(weight)|| w === "")
+                  {
+                    alert("is it valid number")
+                  }
+        else if (weight>15)
+                  {
+                    alert("weight exceedes");
+        
+                  }
+        else 
+                  {
+                    alert("you're good to go");
+                  }
+                  }
+                </script>
+                </head>
+                <body>
+                    <h2>enter the weight</h2>
+                    <input type="number" id="wi" placeholder="enter the weight">
+                    <button onclick="cw()">check weight</button>
+                </body>
+            
+        </html>
