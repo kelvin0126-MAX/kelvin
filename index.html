@@ -14,14 +14,15 @@
         </body>
         </html>
 
-
+        //laggage weight checking//
+        
         <html>
             <head>
                 <title>laggage weight checking</title>
                 <script>
-                  function cw()
+                  function lw()
                   {
-                    const w=document.getElementById("wi").value;
+                    const w=document.getElementById("i").value;
                     const weight = parseFloat(w);
                     if(isNaN(weight)|| w === "")
                   {
@@ -41,8 +42,8 @@
                 </head>
                 <body>
                     <h2>enter the weight</h2>
-                    <input type="number" id="wi" placeholder="enter the weight">
-                    <button onclick="cw()">check weight</button>
+                    <input type="number" id="i" placeholder="enter the weight">
+                    <button onclick="lw()">check weight</button>
                 </body>
             
         </html>
