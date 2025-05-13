@@ -8,18 +8,18 @@
         <label>price</label>
         <input type="text" id="p1"  value='{"apple": 0.7, "banana": 1.6}'>
         <button onclick="calculate()">calculate</button>
-        <h2 id="result">cost: £x.xx</h2>
+        <h2 id="result">Total: £x.xx</h2>
 
 
         <script>
             function f7(basket,price) 
             {
-let cost=0;
+let Total=0;
 for(product in basket)
 {
     if(price[product]!==undefined)
 {
-    cost=cost+(basket[product]*price[product]);
+    Total=Total+(basket[product]*price[product]);
 
 }
 }
@@ -34,8 +34,8 @@ let price=document.getElementById("p1").value;
  {
         let basketobj = JSON.parse(basket);
         let priceobj = JSON.parse(price);
-                let cost = f7(basketobj, priceobj);
-        document.getElementById("result").innerText = "Cost: £"+ cost.toFixed(2);
+                let Total = f7(basketobj, priceobj);
+        document.getElementById("result").innerText = "Total: £"+ cost.toFixed(2);
     } else
      {
         document.getElementById("result").innerText = "Please enter both basket and prices.";
